@@ -61,8 +61,7 @@ class Mainpage extends Component {
                   Start Your Day with Coofee and Good Meals
                 </h2>
                 <p>
-                  We provide high quality beans, good taste, and healthy meals
-                  made by love just for you. Start your day with us for a bigger
+                  We provide high quality beans, good taste. Start your day with us for a bigger
                   smile!
                 </p>
                 <div className="mt-5">
@@ -74,37 +73,7 @@ class Mainpage extends Component {
                   </Link>
                 </div>
               </div>
-              <section className="relative bg-white mt-20 mb-[-9rem] rounded-xl shadow-xl text-quartenary flex flex-row py-5 justify-center items-center text-center md:text-left">
-                <aside className="flex-1 border-r-2 py-2 md:py-6 flex flex-col md:flex-row justify-center gap-3 md:gap-8 items-center">
-                  <div>
-                    <div className="bg-secondary rounded-full p-2 w-10 aspect-square flex justify-center items-center">
-                      <img src={staffIcon} alt="" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-md lg:text-xl">90+</p>
-                    <p className="font-normal text-primary">Staff</p>
-                  </div>
-                </aside>
-                <aside className="flex-1 border-r-2 py-2 md:py-6 flex flex-col md:flex-row justify-center gap-3 md:gap-8 items-center">
-                  <div className="bg-secondary rounded-full p-2 w-10 aspect-square flex justify-center items-center">
-                    <img src={loveIcon} alt="" />
-                  </div>
-                  <div>
-                    <p className="text-md lg:text-xl">800+</p>
-                    <p className="font-normal text-primary">Customers</p>
-                  </div>
-                </aside>
-                <aside className="flex-1 py-2 md:py-6 flex flex-col md:flex-row justify-center gap-3 md:gap-8 items-center">
-                  <div className="bg-secondary rounded-full p-2 w-10 aspect-square flex justify-center items-center">
-                    <img src={placeIcon} alt="" />
-                  </div>
-                  <div>
-                    <p className="text-md lg:text-xl">30+</p>
-                    <p className="font-normal text-primary">Stores</p>
-                  </div>
-                </aside>
-              </section>
+              
             </div>
           </section>
           <div className="mb-8 md:mb-20"></div>
@@ -174,117 +143,8 @@ class Mainpage extends Component {
               ))}
             </div>
           </section>
-          <section className="global-px py-8 md:py-20">
-            <div className="flex flex-col items-center mb-8 md:mb-20">
-              <h2 className="text-4xl text-quartenary font-semibold mb-5 text-center">
-                Visit Our Store in
-                <br />
-                the Spot on the Map Below
-              </h2>
-              <p className="text-base text-gray-700 text-center">
-                See our store in every city on the spot and spen your good day
-                there. See you soon!
-              </p>
-            </div>
-            <div className="mt-10">
-              <img src={mapImage} alt="global map" />
-            </div>
-          </section>
-          <section className="global-px py-8 md:py-20">
-            <div className="flex flex-col items-center mb-8 md:mb-20">
-              <h2 className="text-4xl text-quartenary font-semibold mb-5 text-center">
-                Our Partner
-              </h2>
-            </div>
-            <div className="flex flex-row flex-wrap justify-center items-center gap-4 md:gap-12 ">
-              <img
-                src={netflixLogo}
-                alt=""
-                width="100px"
-                className="lg:w-[15%] aspect-[3/2] object-contain grayscale opacity-20 duration-300 hover:filter-none hover:opacity-100"
-              />
-              <img
-                src={redditLogo}
-                alt=""
-                width="100px"
-                className="lg:w-[15%] aspect-[3/2] object-contain grayscale opacity-20 duration-300 hover:filter-none hover:opacity-100"
-              />
-              <img
-                src={amazonLogo}
-                alt=""
-                width="100px"
-                className="lg:w-[15%] aspect-[3/2] object-contain grayscale opacity-20 duration-300 hover:filter-none hover:opacity-100"
-              />
-              <img
-                src={discordLogo}
-                alt=""
-                width="100px"
-                className="lg:w-[15%] aspect-[3/2] object-contain grayscale opacity-20 duration-300 hover:filter-none hover:opacity-100"
-              />
-              <img
-                src={spotifyLogo}
-                alt=""
-                width="100px"
-                className="lg:w-[15%] aspect-[3/2] object-contain grayscale opacity-20 duration-300 hover:filter-none hover:opacity-100"
-              />
-            </div>
-          </section>
-          <section className="global-px py-8 md:py-20">
-            <div className="flex flex-col items-center mb-8 md:mb-20 text-center">
-              <h2 className="text-3xl md:text-[35px] text-quartenary font-semibold mb-5">
-                Loved by Customer of
-                <br /> Happy Customer
-              </h2>
-              <p className="text-[1rem] text-center max-w-[555px] text-primary">
-                These are the stories of our customers who have visited us with
-                great pleasure.
-              </p>
-            </div>
-            <div className="overflow-auto flex flex-row gap-5 flex-wrap lg:flex-nowrap ">
-              {this.state.reviews.map((review, idx) => {
-                return (
-                  <div
-                    className="w-[400px] border-gray-300 hover:border-tertiary border-2 duration-200 rounded-xl p-7 space-y-4 hover:shadow-2xl mx-auto"
-                    key={idx}
-                  >
-                    <div className="flex flex-row gap-2 items-center">
-                      <img
-                        src={phProfile}
-                        alt=""
-                        className="w-14 aspect-square object-cover rounded-full"
-                      />
-                      <div className="flex-1">
-                        <p className="font-semibold text-quartenary text-lg">
-                          {review.name}
-                        </p>
-                        <p className="text-primary text-sm">Warsaw, Poland</p>
-                      </div>
-                      <div className="flex flex-row items-center gap-2">
-                        4.5 <img src={starIcon} alt="" />
-                      </div>
-                    </div>
-                    <p className="text-quartenary">“{review.text}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-          <section className="global-px z-10 relative w-full mb-6 md:mb-[-6rem]">
-            <div className="shadow-primary rounded-xl flex flex-col md:flex-row py-10 md:py-14 px-8 md:px-16 bg-white text-center md:text-left">
-              <aside className="flex-1 space-y-4 mb-5 md:mb-0">
-                <p className="text-3xl font-semibold">Check our promo today!</p>
-                <p className="text-primary">
-                  Let&apos;s see the deals and pick yours
-                </p>
-              </aside>
-              <aside className="hidden lg:block lg:flex-1"></aside>
-              <aside className="flex-1 flex flex-col justify-center">
-                <button className="ml-auto w-[100%] md:w-[75%]  bg-secondary rounded-xl py-4 text-tertiary font-bold">
-                  See promo
-                </button>
-              </aside>
-            </div>
-          </section>
+          
+          
         </main>
         <Footer />
       </Fragment>
